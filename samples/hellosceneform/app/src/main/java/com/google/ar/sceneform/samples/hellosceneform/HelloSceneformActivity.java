@@ -66,10 +66,7 @@ public class HelloSceneformActivity extends AppCompatActivity {
         .thenAccept(renderable -> andyRenderable = renderable)
         .exceptionally(
             throwable -> {
-              Toast toast =
-                  Toast.makeText(this, "Unable to load andy renderable", Toast.LENGTH_LONG);
-              toast.setGravity(Gravity.CENTER, 0, 0);
-              toast.show();
+              Toast.makeText(this, "Unable to load andy renderable", Toast.LENGTH_LONG).show();
               return null;
             });
 
